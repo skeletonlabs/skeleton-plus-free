@@ -1,0 +1,26 @@
+export default function Rustic() {
+	return (
+		<>
+			<img
+				src="https://picsum.photos/seed/skeleton/320"
+				className="rounded-container"
+				alt="Rustic filter"
+				loading="lazy"
+				style={{ filter: 'url(#Rustic)' }}
+			/>
+			<svg id="svg-filter-rustic" className="absolute -left-full w-0 h-0">
+				<filter id="Rustic" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+					<feColorMatrix
+						type="matrix"
+						in="SourceGraphic"
+						result="colormatrix"
+						values="0.39215686274509803 0.39215686274509803 0.39215686274509803 0 0
+						0.3333333333333333 0.3333333333333333 0.3333333333333333 0 0
+						0.30980392156862746 0.30980392156862746 0.30980392156862746 0 0
+						0 0 0 1 0"
+					></feColorMatrix>
+				</filter>
+			</svg>
+		</>
+	);
+}
