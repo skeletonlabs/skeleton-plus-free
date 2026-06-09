@@ -65,8 +65,8 @@ Create a new component in `/lib/components/Calendar/Calendar.svelte` and insert 
 
 ```svelte
 <script lang="ts">
-	import { Calendar } from 'bits-ui';
 	import { getLocalTimeZone, today } from '@internationalized/date';
+	import { Calendar } from 'bits-ui';
 
 	const isDateUnavailable: Calendar.RootProps['isDateUnavailable'] = (date) => {
 		return date.day === 17 || date.day === 18;
@@ -157,7 +157,7 @@ Styling the `<Calendar.Day>` sub-component.
 <Calendar.Day
 	class="rounded hover:border-surface-200-800 data-selected:bg-foreground data-disabled:text-surface-600-400 data-selected:preset-filled data-unavailable:text-surface-600-400 data-disabled:pointer-events-none data-outside-month:pointer-events-none data-selected:font-medium data-unavailable:line-through group relative inline-flex size-10 items-center justify-center whitespace-nowrap border border-transparent bg-transparent p-0 text-sm font-normal"
 >
-	<div class="bg-foreground group-data-selected:bg-background group-data-today:block absolute top-[5px] hidden size-1 rounded-full"></div>
+	<div class="bg-foreground group-data-selected:bg-background group-data-today:block absolute top-1.25 hidden size-1 rounded-full"></div>
 	{date.day}
 </Calendar.Day>
 ```
@@ -219,7 +219,7 @@ Below is a complete example showing the entire component with all styles and bas
 											class="rounded hover:border-surface-200-800 data-selected:bg-foreground data-disabled:text-surface-600-400 data-selected:preset-filled data-unavailable:text-surface-600-400 data-disabled:pointer-events-none data-outside-month:pointer-events-none data-selected:font-medium data-unavailable:line-through group relative inline-flex size-10 items-center justify-center whitespace-nowrap border border-transparent bg-transparent p-0 text-sm font-normal"
 										>
 											<div
-												class="bg-foreground group-data-selected:bg-surface-50-950 group-data-today:block absolute top-[5px] hidden size-1 rounded-full"
+												class="bg-foreground group-data-selected:bg-surface-50-950 group-data-today:block absolute top-1.25 hidden size-1 rounded-full"
 											></div>
 											{date.day}
 										</Calendar.Day>
