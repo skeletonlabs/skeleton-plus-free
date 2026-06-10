@@ -3,7 +3,7 @@ title: Melt UI
 description: An open-source Svelte library for building high-quality, accessible design systems and web apps.
 ---
 
-<img src="/lib/assets/tutorials/002-integrations/melt-ui/banner.png" alt="Melt UI Banner" />
+<img src="/lib/assets/images/tutorials/002-integrations/melt-ui/banner.png" alt="Melt UI Banner" />
 
 <figure class="linker bg-noise bg-[#d59f6a]!">
 	<a class="btn preset-filled" href="https://next.melt-ui.com/" target="_blank">
@@ -29,7 +29,7 @@ At minimum, we recommend you read the following documentation before you start t
 
 In this guide we'll implement the following Melt UI `<Accordion>` component. This will showcase the bare minimum requirements for integrating Skeleton with Melt UI.
 
-<img src="/lib/assets/tutorials/002-integrations/melt-ui/accordion.gif" alt="Melt UI Accordion Component" />
+<img src="/lib/assets/images/tutorials/002-integrations/melt-ui/accordion.gif" alt="Melt UI Accordion Component" />
 
 <figure class="linker bg-noise bg-[#d59f6a]!">
 	<a class="btn preset-filled" href="https://next.melt-ui.com/components/accordion/" target="_blank">
@@ -59,7 +59,7 @@ Create a new component in `/lib/components/Accordion/Accordion.svelte` and inser
 
 ```svelte
 <script lang="ts">
-	import { Accordion, type AccordionItem } from "melt/builders";
+	import { Accordion, type AccordionItem } from 'melt/builders';
 
 	type Item = AccordionItem<{
 		title: string;
@@ -67,8 +67,8 @@ Create a new component in `/lib/components/Accordion/Accordion.svelte` and inser
 	}>;
 
 	const items: Item[] = [
-		{ id: "item-1", title: "What is it?", description: "..."},
-		{ id: "item-2", title: "Can I customize it?", description: "..."},
+		{ id: 'item-1', title: 'What is it?', description: '...' },
+		{ id: 'item-2', title: 'Can I customize it?', description: '...' },
 	];
 
 	const accordion = new Accordion();

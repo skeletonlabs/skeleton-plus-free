@@ -3,7 +3,7 @@ title: Radix UI
 description: Unstyled, accessible, open source React primitives for high-quality web apps and design systems.
 ---
 
-<img src="/lib/assets/tutorials/002-integrations/radix-ui/banner.png" alt="Radix UI Banner" />
+<img src="/lib/assets/images/tutorials/002-integrations/radix-ui/banner.png" alt="Radix UI Banner" />
 
 <figure class="linker bg-noise bg-[#3a2036]!">
 	<a class="btn preset-filled" href="https://www.radix-ui.com/" target="_blank">
@@ -30,7 +30,7 @@ At minimum, we recommend you read the following documentation before you start t
 
 In this guide we'll implement the following Radix UI `<ToggleGroup>` component. This will showcase the bare minimum requirements for integrating Skeleton with Radix UI.
 
-<img src="/lib/assets/tutorials/002-integrations/radix-ui/toggle-group.gif" alt="Radix UI Toggle Group Component" />
+<img src="/lib/assets/images/tutorials/002-integrations/radix-ui/toggle-group.gif" alt="Radix UI Toggle Group Component" />
 
 <figure class="linker bg-noise bg-[#3a2036]!">
 	<a class="btn preset-filled" href="https://www.radix-ui.com/primitives/docs/components/toggle-group" target="_blank">
@@ -59,38 +59,23 @@ npm install @radix-ui/react-toggle-group
 Create a new component in `/src/components/ToggleGroup/ToggleGroup.tsx` and insert the following markup. This will generate an unstyled version of the component. Note that we have renamed the Radix component to `RadixToggleGroup` to remain semantic and avoid conflict with our own component name.
 
 ```tsx
-import { type FC } from "react";
-import * as RadixToggleGroup from "@radix-ui/react-toggle-group";
+import { type FC } from 'react';
+import * as RadixToggleGroup from '@radix-ui/react-toggle-group';
 
-interface ToggleGroupProps { /* ... */ }
+interface ToggleGroupProps {
+	/* ... */
+}
 
 export const ToggleGroup: FC<ToggleGroupProps> = () => {
 	return (
-		<RadixToggleGroup.Root
-			className="ToggleGroup"
-			type="single"
-			defaultValue="center"
-			aria-label="Text alignment"
-		>
-			<RadixToggleGroup.Item
-				className="ToggleGroupItem"
-				value="left"
-				aria-label="Left aligned"
-			>
+		<RadixToggleGroup.Root className="ToggleGroup" type="single" defaultValue="center" aria-label="Text alignment">
+			<RadixToggleGroup.Item className="ToggleGroupItem" value="left" aria-label="Left aligned">
 				Left
 			</RadixToggleGroup.Item>
-			<RadixToggleGroup.Item
-				className="ToggleGroupItem"
-				value="center"
-				aria-label="Center aligned"
-			>
+			<RadixToggleGroup.Item className="ToggleGroupItem" value="center" aria-label="Center aligned">
 				Center
 			</RadixToggleGroup.Item>
-			<RadixToggleGroup.Item
-				className="ToggleGroupItem"
-				value="right"
-				aria-label="Right aligned"
-			>
+			<RadixToggleGroup.Item className="ToggleGroupItem" value="right" aria-label="Right aligned">
 				Right
 			</RadixToggleGroup.Item>
 		</RadixToggleGroup.Root>
@@ -103,8 +88,8 @@ export const ToggleGroup: FC<ToggleGroupProps> = () => {
 Finally, let's add our new component to the app in `/src/App.tsx`.
 
 ```tsx
-import "./App.css";
-import { ToggleGroup } from "./components/ToggleGroup/ToggleGroup";
+import './App.css';
+import { ToggleGroup } from './components/ToggleGroup/ToggleGroup';
 
 function App() {
 	return (

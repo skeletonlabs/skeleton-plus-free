@@ -1,6 +1,6 @@
 ---
-title: 'Introduction'
-description: 'An introduction to the core concepts of Skeleton.'
+title: Get Started
+description: An introduction to the core concepts of Skeleton.
 ---
 
 Skeleton provides a framework for design systems in frontend web applications. Built on a foundation of [Tailwind CSS](https://tailwindcss.com/), we provide a robust theme system and vast suite of components. While also establishing a simple set of patterns and conventions for you and your team to follow. We solve the hard problems of building design systems at scale, so you can ship faster.

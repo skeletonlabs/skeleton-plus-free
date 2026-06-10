@@ -33,7 +33,9 @@ In this example we will add a default theme that that can be used as a fallback.
 ```
 
 ```css
-[data-theme='default'] {/* ... */}
+[data-theme='default'] {
+	/* ... */
+}
 ```
 
 **React**
@@ -48,12 +50,12 @@ const getThemes = async () => {
 	return [
 		{
 			name: 'theme-1',
-			css: `[data-theme='theme-1'] { /* ... */ }`
+			css: `[data-theme='theme-1'] { /* ... */ }`,
 		},
 		{
 			name: 'theme-2',
-			css: `[data-theme='theme-2'] { /* ... */ }`
-		}
+			css: `[data-theme='theme-2'] { /* ... */ }`,
+		},
 	];
 };
 
@@ -62,8 +64,8 @@ export const getServerSideProps = (async () => {
 	return {
 		props: {
 			themes: ['default', ...themes.map((t) => t.name)],
-			css: themes.map((theme) => theme.css).join('\n\n')
-		}
+			css: themes.map((theme) => theme.css).join('\n\n'),
+		},
 	};
 }) satisfies GetServerSideProps<{ repo: Repo }>;
 
@@ -92,12 +94,12 @@ const getThemes = async () => {
 	return [
 		{
 			name: 'theme-1',
-			css: `[data-theme='theme-1'] { /* ... */ }`
+			css: `[data-theme='theme-1'] { /* ... */ }`,
 		},
 		{
 			name: 'theme-2',
-			css: `[data-theme='theme-2'] { /* ... */ }`
-		}
+			css: `[data-theme='theme-2'] { /* ... */ }`,
+		},
 	];
 };
 
@@ -105,7 +107,7 @@ export const load: PageLoad = async (event) => {
 	const themes = getThemes();
 	return {
 		themes: ['default', ...themes.map((t) => t.name)],
-		css: themes.map((theme) => theme.css).join('\n\n')
+		css: themes.map((theme) => theme.css).join('\n\n'),
 	};
 };
 ```

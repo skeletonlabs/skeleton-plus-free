@@ -3,7 +3,7 @@ title: Bits UI
 description: Flexible, unstyled, and accessible primitives that provide the foundation for building your own high-quality Svelte component library.
 ---
 
-<img src="/lib/assets/tutorials/002-integrations/bits-ui/banner.png" alt="Bits UI Banner" />
+<img src="/lib/assets/images/tutorials/002-integrations/bits-ui/banner.png" alt="Bits UI Banner" />
 
 <figure class="linker bg-noise bg-[#cae2f7]!">
 	<a class="btn preset-filled" href="https://www.bits-ui.com/" target="_blank">
@@ -29,7 +29,7 @@ At minimum, we recommend you read the following documentation before you start t
 
 In this guide we'll implement the following Bits UI `<Calendar>` component. This will showcase the bare minimum requirements for integrating Skeleton with Bits UI.
 
-<img src="/lib/assets/tutorials/002-integrations/bits-ui/date-picker.gif" alt="Bits UI Date Picker Component" />
+<img src="/lib/assets/images/tutorials/002-integrations/bits-ui/date-picker.gif" alt="Bits UI Date Picker Component" />
 
 <figure class="linker bg-noise bg-[#cae2f7]!">
 	<a class="btn preset-filled" href="https://www.bits-ui.com/docs/components/calendar" target="_blank">
