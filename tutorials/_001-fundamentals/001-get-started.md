@@ -7,8 +7,6 @@ Skeleton provides a framework for design systems in frontend web applications. B
 
 ## What is Skeleton?
 
-> Placeholder: Graphic Here
-
 ### Design System
 
 With Skeleton, the design system isn't an afterthought, it's the core pillar. Providing themes, colors, typography, spacing, and more. With opinionated guardrails for applying your application's design.
@@ -22,8 +20,6 @@ A library of reusable CSS utility classes that enable you to quickly style nativ
 These go beyond presentation, and enable state and logic. Built atop battle-tested primitives via [Zag.js](https://zagjs.com/), from the creators of [Chakra UI](https://chakra-ui.com/). While fully adapting to your design system out of the box.
 
 ## Our Philosophy
-
-> Placeholder: Graphic Here
 
 ### Framework Agnostic Core
 
@@ -47,8 +43,6 @@ Skeleton is designed to adapt to your project's aesthetic, while still providing
 
 ## Additional Benefits
 
-> Placeholder: Graphic Here
-
 ### Open Source
 
 Skeleton is provided as [free and open-source software](https://github.com/skeletonlabs/skeleton) (FOSS) under the [MIT License](https://github.com/skeletonlabs/skeleton?tab=MIT-1-ov-file#readme).
@@ -56,5 +50,3 @@ Skeleton is provided as [free and open-source software](https://github.com/skele
 ### The Community
 
 A vast community of users and contributors across [GitHub](https://github.com/skeletonlabs/skeleton), [Discord](https://discord.gg/EXqV7W8MtY), and [Bluesky](https://bsky.app/profile/skeleton.dev).
-
-> Placeholder: Prev/Next Button Component Here
